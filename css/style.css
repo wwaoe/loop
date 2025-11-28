@@ -21,8 +21,8 @@ main{
 }
 
 .container{
+    max-width: 1110px;
     margin: 0 auto;
-    
 }
 
 /*----------деливери3---------*/
@@ -49,4 +49,59 @@ main{
 
 .delivery p{
     font-size: 21px;
+}
+
+/*------------мен-вумен-------*/
+.man-woman .container{
+    display: flex;
+    flex-direction: row;
+}
+
+.man,
+.woman{
+    width: 50%;
+    padding-top: 60px;
+    padding-bottom: 58px;
+}
+
+.man-woman h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.man-woman h2 span {
+    font-weight: normal;
+}
+
+.man-woman a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #D7B399;
+    width: 80px;
+    height: 30px;
+    margin-top: 40px;
+}
+
+.man-woman a:hover,
+.man-woman a:focus{
+    background-color: #aa8a72;
+}
+
+.man{
+    background: url(../img/man.png) no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+
+.woman{
+    padding-left: 35px;
+    background: url(../img/woman.png) no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+
+.man-woman{
+    background: linear-gradient(90deg, #f9f6f1 0%, #f9f6f1 50%, #f9e0e0 50%, #f9e0e0 100%);
 }
