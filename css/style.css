@@ -160,3 +160,84 @@ ul{
     min-height: 564px;
     background: url(../img/first-screen__image.png) no-repeat right center;
 }
+
+/*----------секция нью новые модели и скидки до 90 %--------------*/
+
+.new .container{
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.new__title{
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.new__btn{
+    width: 220px;
+    height: 50px;
+    background: #D7B399;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+}
+
+.new__btn:hover,
+.new__btn:focus{
+    background-color: #aa8a72;
+}
+
+.catalog{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.card{
+    border: 1px solid #D7B399;
+    padding: 22px 25px 25px;
+    position: relative;
+}
+
+.card__title{
+    font-size: 14px;
+    font-weight: 600px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 71px;
+    margin-right: 71px;
+}
+
+.card__price{
+    font-size: 18px;
+    color: #D7B399;
+    font-weight: bold;
+}
+
+/* .card:nth-child(2){
+    position: fixed;
+    top: 200px;
+    left: 300px;
+} */
+
+.bi-suit-heart-fill{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #D7B399;
+}
+
+.bi-suit-heart-fill:hover,
+.bi-suit-heart-fill:focus{
+    fill: #aa8a72;
+}
+
+/* .pic{
+    float:left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+} */
