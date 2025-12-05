@@ -109,12 +109,17 @@ main{
 /*----------хедер--------*/
 
 .header{
-    min-height: 120px;
     background-color: #F9F6F1;
+    font-family: 'montserratregular';
 }
 
 .header-menu{
     min-height: 90px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: #F9F6F1;
 }
 
 .section_wrapper{
@@ -155,15 +160,85 @@ ul{
 }
 
 /*------------банер-----------*/
-
-.slider_item{
-    min-height: 564px;
-    background: url(../img/first-screen__image.png) no-repeat right center;
+.banner{
+    margin: 90px;
 }
 
+.slider__item{
+    display: flex;
+    padding-top: 166px;
+    justify-content: space-between;
+    min-height: 564px;
+    background: url('../img/running_shoes.png') no-repeat right center;
+}
+
+.slider-text{
+    font-size: 30px;
+}
+
+.slider__big-text{
+    font-family: 'montserratbold', 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    text-transform: uppercase;
+    padding-top: 37px;
+    padding-bottom: 53px;
+}
+
+.button{
+    display: block;
+    width: 240px;
+    padding: 22px 0;
+    text-align: center;
+    background-color: #D7B399;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #FFF;
+}
+
+.slider__item-price{
+    font-family: 'montserratbold', 'Arial', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.slider__price--old{
+    font-size: 24px;
+    text-decoration-line: line-through;
+}
+
+.slider__price--new{
+    font-size: 42px;
+    color: #d84033;
+    
+}
+
+.slider__wrapper{
+    position:relative;
+}
+
+.slider__button{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+}
+
+.slider__button--prev{
+    left: 100%;
+    margin-left: 72px;
+}
+
+.slider__button--next{
+    right: 100%;
+    margin-right: 72px;
+}
 /*----------секция нью новые модели и скидки до 90 %--------------*/
 
-.new .container{
+.new .container,
+.sale .container{
     text-align: center;
     padding-top: 150px;
     padding-bottom: 150px;
@@ -241,3 +316,34 @@ ul{
     margin-bottom: 20px;
     width: 300px;
 } */
+
+/*-------------5 секция платья(футболки)------------*/
+.dress__wrapper{
+    flex-wrap: wrap;
+    margin-top: 0;
+    justify-content: center;
+}
+
+.dress__item{
+    width: 277px;
+    height: 236px;
+    text-align: right;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.dress__item-gray{
+    background-color: #f4f4f4;
+}
+
+.dress__item-cream{
+    background-color: #f9f6f1;
+}
+
+.dress__item-text{
+    font-size: 21px;
+    text-transform: uppercase;
+    bottom: 24px;
+    left: 30px;
+}
