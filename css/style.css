@@ -1,70 +1,70 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 html,
-body{
+body {
     height: 100%;
     min-height: 100%;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     font-family: 'montserratregular';
 }
 
-main{
+main {
     flex-grow: 1;
 }
 
-.container{
+.container {
     max-width: 1110px;
     margin: 0 auto;
 }
 
 /*----------деливери3---------*/
 
-.delivery{
+.delivery {
     background: #212121;
     color: #FFF;
 }
 
-.delivery .container{
+.delivery .container {
     text-align: center;
     padding-top: 80px;
     padding-bottom: 60px;
 }
 
-.delivery h2{
+.delivery h2 {
     font-size: 30px;
     margin-bottom: 13px;
 }
 
-.delivery h2 span{
+.delivery h2 span {
     font-weight: normal;
 }
 
-.delivery p{
+.delivery p {
     font-size: 21px;
 }
 
 /*------------мен-вумен-------*/
-.man-woman .container{
+.man-woman .container {
     display: flex;
     flex-direction: row;
 }
 
 .man,
-.woman{
+.woman {
     width: 50%;
     padding-top: 60px;
     padding-bottom: 58px;
 }
 
-.man-woman h2{
+.man-woman h2 {
     font-size: 24px;
     text-transform: uppercase;
     margin-bottom: 25px;
@@ -85,35 +85,35 @@ main{
 }
 
 .man-woman a:hover,
-.man-woman a:focus{
+.man-woman a:focus {
     background-color: #aa8a72;
 }
 
-.man{
+.man {
     background: url(../img/man.png) no-repeat;
     background-position-x: right;
     background-position-y: bottom;
 }
 
-.woman{
+.woman {
     padding-left: 35px;
     background: url(../img/woman.png) no-repeat;
     background-position-x: right;
     background-position-y: bottom;
 }
 
-.man-woman{
+.man-woman {
     background: linear-gradient(90deg, #f9f6f1 0%, #f9f6f1 50%, #f9e0e0 50%, #f9e0e0 100%);
 }
 
 /*----------хедер--------*/
 
-.header{
+.header {
     background-color: #F9F6F1;
     font-family: 'montserratregular';
 }
 
-.header-menu{
+.header-menu {
     min-height: 90px;
     position: fixed;
     width: 100%;
@@ -122,37 +122,38 @@ main{
     background-color: #F9F6F1;
 }
 
-.section_wrapper{
+.section_wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    min-height: 90px;
 }
 
-.mainmenu_list{
+.mainmenu_list {
     display: flex;
     flex-direction: row;
     gap: 35px;
 }
 
-.basket_list{
+.basket_list {
     display: flex;
     flex-direction: row;
+    align-items:center;
     gap: 15px;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-.section_wrapper a{
-   font-size: 14px;
-   color: black;
-   text-decoration: none;
+.section_wrapper a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
 }
 
-.mainmenu_item a{
+.mainmenu_item a {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -160,11 +161,11 @@ ul{
 }
 
 /*------------банер-----------*/
-.banner{
+.banner {
     margin: 90px;
 }
 
-.slider__item{
+.slider__item {
     display: flex;
     padding-top: 166px;
     justify-content: space-between;
@@ -172,11 +173,11 @@ ul{
     background: url('../img/running_shoes.png') no-repeat right center;
 }
 
-.slider-text{
+.slider-text {
     font-size: 30px;
 }
 
-.slider__big-text{
+.slider__big-text {
     font-family: 'montserratbold', 'Arial', sans-serif;
     font-weight: bold;
     font-size: 55px;
@@ -185,7 +186,7 @@ ul{
     padding-bottom: 53px;
 }
 
-.button{
+.button {
     display: block;
     width: 240px;
     padding: 22px 0;
@@ -194,30 +195,38 @@ ul{
     text-transform: uppercase;
     font-size: 16px;
     color: #FFF;
+    text-decoration: none;
 }
 
-.slider__item-price{
+.button:focus,
+.button:hover{
+    background-color: #aa8a72;
+}
+
+.slider__item-price {
     font-family: 'montserratbold', 'Arial', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.slider__price--old{
+.slider__price--old {
     font-size: 24px;
     text-decoration-line: line-through;
+    margin-left: 40px;
 }
 
-.slider__price--new{
+.slider__price--new {
     font-size: 42px;
     color: #d84033;
-    
+    margin-top: 14px;
+
 }
 
-.slider__wrapper{
-    position:relative;
+.slider__wrapper {
+    position: relative;
 }
 
-.slider__button{
+.slider__button {
     position: absolute;
     top: 50%;
     cursor: pointer;
@@ -226,30 +235,31 @@ ul{
     outline: none;
 }
 
-.slider__button--prev{
+.slider__button--prev {
     left: 100%;
     margin-left: 72px;
 }
 
-.slider__button--next{
+.slider__button--next {
     right: 100%;
     margin-right: 72px;
 }
+
 /*----------секция нью новые модели и скидки до 90 %--------------*/
 
 .new .container,
-.sale .container{
+.sale .container {
     text-align: center;
     padding-top: 150px;
     padding-bottom: 150px;
 }
 
-.new__title{
+.new__title {
     font-size: 36px;
     text-transform: uppercase;
 }
 
-.new__btn{
+.new__btn {
     width: 220px;
     height: 50px;
     background: #D7B399;
@@ -259,11 +269,11 @@ ul{
 }
 
 .new__btn:hover,
-.new__btn:focus{
+.new__btn:focus {
     background-color: #aa8a72;
 }
 
-.catalog{
+.catalog {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -271,22 +281,21 @@ ul{
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.card{
+
+.card {
     border: 1px solid #D7B399;
     padding: 22px 25px 25px;
     position: relative;
 }
 
-.card__title{
+.card__title {
     font-size: 14px;
     font-weight: 600px;
     margin-top: 25px;
     margin-bottom: 15px;
-    margin-left: 71px;
-    margin-right: 71px;
 }
 
-.card__price{
+.card__price {
     font-size: 18px;
     color: #D7B399;
     font-weight: bold;
@@ -298,7 +307,7 @@ ul{
     left: 300px;
 } */
 
-.bi-suit-heart-fill{
+.bi-suit-heart-fill {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -306,7 +315,7 @@ ul{
 }
 
 .bi-suit-heart-fill:hover,
-.bi-suit-heart-fill:focus{
+.bi-suit-heart-fill:focus {
     fill: #aa8a72;
 }
 
@@ -318,13 +327,13 @@ ul{
 } */
 
 /*-------------5 секция платья(футболки)------------*/
-.dress__wrapper{
+.dress__wrapper {
     flex-wrap: wrap;
     margin-top: 0;
     justify-content: center;
 }
 
-.dress__item{
+.dress__item {
     width: 277px;
     height: 236px;
     text-align: right;
@@ -333,17 +342,62 @@ ul{
     flex-direction: row;
 }
 
-.dress__item-gray{
+.dress__item-gray {
     background-color: #f4f4f4;
 }
 
-.dress__item-cream{
+.dress__item-cream {
     background-color: #f9f6f1;
 }
 
-.dress__item-text{
+.dress__item-text {
     font-size: 21px;
     text-transform: uppercase;
+    position: absolute;
     bottom: 24px;
     left: 30px;
+}
+
+.dress__item img{
+    position: absolute;
+    bottom: 0px;
+    right: 3px;
+    height: 92%;
+}
+
+/*-----------media queries------------*/
+
+@media (max-width: 1200px) {
+    .catalog {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .man-woman .container {
+        flex-direction: column;
+    }
+
+    .man,
+    .woman {
+        width: 100%;
+    }
+
+    .man-woman {
+        background: linear-gradient(180deg,
+                #f9f6f1 0%,
+                #f9f6f1 50%,
+                #f9e0e0 50%,
+                #f9e0e0 100%);
+    }
+
+    .man {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 576px){
+    .card{
+        width: 90%;
+    }
 }
