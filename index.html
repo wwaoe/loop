@@ -6,11 +6,17 @@
     <title>The Loop</title>
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/ico" sizes="32x32" href="img/Frame.png">
+    <link rel="icon" type="image/ico" sizes="16x16" href="img/Frame.png">
+    <link rel="shortcut icon" href="img/Frame.png">
 </head>
 <body>
     <header class="header">
         <section class="header-menu">
-            <div class="section_wrapper container">
+            <div class="section_wrapper container menu__wrapper">
+                <button class="navbar-toggler" id="navbar-toggler" type="button">
+                    <img src="img/bars.svg" width="30px">
+                </button>
                 <div class="menu">
                     <ul class="mainmenu_list">
                         <li class="mainmenu_item">
@@ -254,5 +260,14 @@
             </div>
         </section>
     </footer>
+    <script type="text/javascript">
+        const btn = document.getElementById("navbar-toggler");
+        const menus = document.querySelectorAll(".menu");
+        btn.addEventListener('click', () => {
+            for (let el of menus) {
+                el.classList.toggle("show");
+            }
+        })
+    </script>
 </body>
 </html>
